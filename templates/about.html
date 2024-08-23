@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}О Нас - Мой Сайт{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">О Нас</h1>
+    <p>Мы — команда профессионалов, стремящаяся предоставить нашим клиентам лучшие решения на рынке. Наша миссия — помогать вам добиваться успеха.</p>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Наша Миссия
+        </div>
+        <div class="card-body">
+            <p class="card-text">Наша цель — предложить вам самые инновационные и эффективные продукты и услуги, которые помогут вам расти и развиваться.</p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Наша Команда
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='ivanov.webp') }}" class="img-fluid rounded-circle mb-3" alt="Алексей Иванов">
+                    <h5>Алексей Иванов</h5>
+                    <p>Основатель и генеральный директор</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='petrova.webp') }}" class="img-fluid rounded-circle mb-3" alt="Мария Петрова">
+                    <h5>Мария Петрова</h5>
+                    <p>Директор по маркетингу</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='smirnov.webp') }}" class="img-fluid rounded-circle mb-3" alt="Иван Смирнов">
+                    <h5>Иван Смирнов</h5>
+                    <p>Технический директор</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Контактная информация
+        </div>
+        <div class="card-body">
+            <p class="card-text">Если у вас есть вопросы или предложения, вы можете связаться с нами по электронной почте: <a href="mailto:info@mysite.ru">info@mysite.ru</a> или по телефону: +7 (495) 123-45-67.</p>
+        </div>
+    </div>
+{% endblock %}
